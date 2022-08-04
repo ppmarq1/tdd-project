@@ -1,8 +1,9 @@
 require './solver'
 
 describe Solver do
-  it 'The factorial method returns the factorial value of a number greater than 0' do
-    result = Solver.new.factorial 6
+  context 'Factorial testing' do
+    it 'The factorial method returns the factorial value of a number greater than 0' do
+      result = Solver.new.factorial 6
 
     expect(result).to eq 720
   end
