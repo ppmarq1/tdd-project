@@ -1,13 +1,9 @@
 class Solver
-  def factorial num
-    if num < 0
-      return 'The number must be greater or equal to 0!'
-    end
+  def factorial(num)
+    return 'The number must be greater or equal to 0!' if num.negative?
 
-    if num == 0 || num == 1
-      return 1
-    end
+    return 1 if [0, 1].include?(num)
 
-    return num * factorial(num - 1)
+    num * factorial(num - 1)
   end
 end
