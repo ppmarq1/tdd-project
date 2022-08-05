@@ -26,4 +26,12 @@ describe Solver do
       expect(result).to eq 'The number must be greater or equal to 0!'
     end
   end
+
+  context 'Reverse testing' do
+    it 'The reverse method returns the given string in a reversed form' do
+      result = Solver.new.reverse 'hello'
+
+      expect(result).to eq 'olleh'
+    end
+  end
 end
