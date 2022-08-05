@@ -58,4 +58,3 @@ context 'fizzbuzz testing' do
     expect(result).to eq '7'
   end
 end
-
