@@ -34,27 +34,27 @@ describe Solver do
       expect(result).to eq 'olleh'
     end
   end
-end
 
-context 'fizzbuzz testing' do
-  it 'should return "Fizz" for 3' do
-    result = Solver.new.fizzbuzz 3
-    expect(result).to eq 'Fizz'
-  end
-  it 'should return "Buzz" for 5' do
-    result = Solver.new.fizzbuzz 5
-    expect(result).to eq 'Buzz'
-  end
-  it 'should return "FizzBuzz" for 15' do
-    result = Solver.new.fizzbuzz 15
-    expect(result).to eq 'FizzBuzz'
-  end
-  it 'should return "Fizz" for 6' do
-    result = Solver.new.fizzbuzz 6
-    expect(result).to eq 'Fizz'
-  end
-  it 'should return "7" for 7' do
-    result = Solver.new.fizzbuzz 7
-    expect(result).to eq '7'
+  context 'fizzbuzz testing' do
+    it 'should return "Fizz" for 3' do
+      result = Solver.new.fizzbuzz 3
+      expect(result).to eq 'Fizz'
+    end
+    it 'should return "Buzz" for 5' do
+      result = Solver.new.fizzbuzz 5
+      expect(result).to eq 'Buzz'
+    end
+    it 'should return "FizzBuzz" for 15' do
+      result = Solver.new.fizzbuzz 15
+      expect(result).to eq 'FizzBuzz'
+    end
+    it 'should return "Fizz" for 6' do
+      result = Solver.new.fizzbuzz 6
+      expect(result).to eq 'Fizz'
+    end
+    it 'should return "7" for 7' do
+      result = Solver.new.fizzbuzz 7
+      expect(result).to eq '7'
+    end
   end
 end
